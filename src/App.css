@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+height: 100%;
+/* width: 100%; */
+display: grid;
+grid-template-rows: repeat(12,1fr);
+grid-template-columns: repeat(12,1fr);
+/* background-image: url("../../Assets/backg.jpg"); */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/* 
+.App > .Main{
+  
+ background-color:gray;
+ grid-row:span 11;
+ grid-column: span 12;
+ overflow-y: auto;
+} */
+
+  /* #FFFFFF */
+
+
+
+
+.App > .Header{
+
+  background-color:black;
+  border: 1px solid red;
+  color: black; 
+  grid-row: span 2;
+  grid-column: span 12;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App > .Main{
+  /* #FFFFFF */
+  
+  background-image: url("/public/images/backg.jpg");
+  overflow-y: auto;
+   grid-row:span 10;
+  grid-column: span 11;
+  overflow-y: auto;
+
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.App > .Menu{
+  background-color:rgb(50, 47, 47) ;
+  grid-row: span 10;
+  grid-column: span 1;
 
-.App-link {
-  color: #61dafb;
-}
+ 
+} 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App > .Footer{
+  background-color: #9C2C77;
+  grid-column: span 12;
+  grid-row: span 1;
+
+  
+} */
